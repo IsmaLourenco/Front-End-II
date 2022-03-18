@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+
+<body>
+
+  <h1 class="titulo">
+    Sistema de Qualidade 4.0
+  </h1>
+  <div class="formulario">
+    <form>
+      <!--  <div>
+          <input class="model" type="text" placeholder="Modelo" required> 
+        </div> -->
+      <select name="carros" class="campo_menor" id="modelo">
+        <option value="model" disabled selected>Escolha um modelo</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="nissan">Nissan</option>
+        <option value="fiat">Fiat</option>
+        <option value="bmw">BMW</option>
+        <option value="other">Outro</option>
+      </select>
+
+      <input class="campo_menor" id="chassis" type="text" placeholder="Chassi" required>
+      <input class="campo_menor" id="imagem" type="text" placeholder="Link da imagem">
+      <textarea name="" class="descricao" cols="30" rows="10" placeholder="Descrição do defeito" required></textarea>
+
+
+      <div class="btn">
+        <button class="limpar" type="reset"> Limpar
+        </button>
+        <button class="enviar" type="submit"> Enviar
+        </button>
+      </div>
+
+    </form>
+  </div>
+
+  <div class="cartao">
+
+    <img class="cartao-img" src="/imagens/img_avatar2.jpg" alt="Avatar">
+
+      <h4 class="cartao-titulo">
+        <b>Jane Doe</b>
+      </h4>
+      <p class="cartao-texto">Interior Designer</p>
+    </div>
+
+
+  </div>
+
+  </div>
+
+</body>
+
+<script src="script.js"></script>
+</body>
+
+</html>
