@@ -15,12 +15,6 @@ body {
   height: 100%;
 }
 
-h1 {
-  padding: 20px;
-  font-size: 45px;
-  color: white
-}
-
 form {
   margin: 10px auto;
   display: flex;
@@ -28,7 +22,10 @@ form {
 }
 
 .titulo {
-  font-size: 25px;
+  padding: 20px;
+  font-size: 30px;
+  color: white;
+  text-align: justify;
 }
 
 .formulario {
@@ -118,11 +115,9 @@ form {
 }
 
 .cartao {
-  
-  padding-top: 10px;
+  height: 100px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 20px;
-  border-width: 100px;
   margin: 20px;
   width: 370px;
   
@@ -136,25 +131,22 @@ form {
 }
 
 .cartao-img {
-  max-width: 100px;
-  max-height: 100px;
-  position: ;
-  padding: 20px;
-  display: flex;
-  align-items: flex-end;
+  width: 70px;
+  height: 70px;
   text-decoration: none;
   flex-direction: column;
-  justify-content: center;
-  border-radius: 20px;
   grid-area: cartao-img;
+  justify-content: center;
 }
 
 .cartao-titulo{
   grid-area: cartao-titulo;
+  text-align: left;  
 }
 
 .cartao-texto{
   grid-area: cartao-texto;
+  text-align: left;
 }
 
 .cartao:hover {
@@ -164,11 +156,7 @@ form {
 
   @media screen and (min-width: 1200px) {
     * {
-      margin: 0;
-      padding: 0;
-      box-sizing: content-box;
-      text-align: center;
-      font-family: 'DM Sans', sans-serif;
+     
     }
     
     body {
@@ -177,25 +165,32 @@ form {
       display: grid;
       gap: 5px;
       grid-template-rows: 1fr 15fr;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 400px 1fr;
       grid-template-areas:
-      "titulo     titulo      titulo"
-      "formulario cartao     cartao";
+      "titulo     titulo"
+      "formulario cartao";
     }
     
+    .cartoes{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: flex-start;
+    }
+
     h1 {
-      font-size: 4rem;
+      
     }
     
     form {
    
-      margin: 10px auto;
-      display: flex;
-      flex-direction: column;
     }
     
     .titulo {
       grid-area: titulo;
+      text-align: center;
+      font-size: 50px;
+      color: rgb(255, 255, 255);
     }
     
     .formulario {
@@ -203,80 +198,31 @@ form {
     }
     
     .campo_menor {
-      font-size: 25px;
-      margin: 20px auto;
-      width: 75%;
-      height: 25px;
-      text-align: center;
-      padding: 10px 5px;
-      outline: none;
-      background: #E8EBED;
-      border: 2px solid rgb(13, 1, 31);
-      ;
-      border-radius: 4px;
+
     }
     
     .descricao {
-      font-size: 25px;
-      margin: 20px auto;
-      width: 80%;
-      height: 175px;
-      text-align: center;
-      border: 2px solid rgb(13, 1, 31);
-      border-radius: 4px;
+
     }
     
     .enviar {
-      align-items: center;
-      color: #fff;
-      font-weight: bold;
-      font-size: 25px;
-      text-transform: uppercase;
-      margin: 20px auto;
-      width: 40%;
-      height: 40px;
-      text-align: center;
-      background-color: darkred;
-      border-radius: 5px;
     
     }
     
     .limpar {
-      align-items: center;
-      color: #fff;
-      font-weight: bold;
-      font-size: 25px;
-      text-transform: uppercase;
-      margin: 20px auto;
-      width: 40%;
-      height: 40px;
-      text-align: center;
-      background-color: rgb(87, 81, 81);
-      border-radius: 5px;
     
     }
     
     .btn {
-      border: none;
-      padding: 16px 32px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 16px;
-      margin: 4px 2px;
-      transition-duration: 0.4s;
-      cursor: pointer;
     
     }
     
     .enviar {
-      transition-duration: 0.4s;
+      
     }
     
     .enviar:hover {
-      background-color: #5990bd;
-      /* Green */
-      color: rgb(255, 255, 255);
-      border-color: #5990bd;
+
     }
     
     .cartao {
@@ -284,18 +230,7 @@ form {
     }
     
     .cartao-img {
-
-      max-width: 100px;
-      max-height: 100px;
-      padding: 20px;
-      display: flex;
-      align-items: flex-end;
-      text-decoration: none;
-      flex-direction: column;
-      justify-content: center;
-      border-radius: 20px;
-      grid-area: cartao-img;
-      
+     
     }
     
     .cartao-titulo{
@@ -308,7 +243,6 @@ form {
     
     .cartao:hover {
         
-        box-shadow: 0 4px 8px 0 #fff;
     }
   
   }
