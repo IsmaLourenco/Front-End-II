@@ -1,10 +1,9 @@
-window.onload = function ({
+window.onload = function (){
 
     const form = document.querySelector('form');
-    const input = document.querySelector('input');
-
+    
     form.addEventListener('submit', (event) => {
 event.preventDefault();
     });
 
-})
+}
