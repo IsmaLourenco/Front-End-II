@@ -13,28 +13,31 @@ body {
   background-size: 100%;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 form {
-  margin: 10px auto;
+  
   display: flex;
   flex-direction: column;
 }
 
 .titulo {
-  padding: 20px;
-  font-size: 30px;
+  margin: 10px;
+  font-size: 25px;
   color: white;
-  text-align: justify;
+  text-align: center;
 }
 
 .formulario {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   border-width: 1px;
-  margin: 20px;
+  margin: 10px;
   margin-left: 20px;
-  width: 370px;
+  width: 320px;
+  align-self: center;
 }
 
 .subtitulo{
@@ -52,7 +55,6 @@ form {
   outline: none;
   background: #E8EBED;
   border: 2px solid rgb(13, 1, 31);
-  ;
   border-radius: 4px;
 }
 
@@ -98,11 +100,10 @@ form {
 
 .btn {
   border: none;
-  padding: 16px 32px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 0px 10px;
   transition-duration: 0.4s;
   cursor: pointer;
 
@@ -119,12 +120,18 @@ form {
   border-color: #5990bd;
 }
 
+.cartoes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .cartao {
   height: 150px;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
   margin: 20px;
-  width: 370px;
+  width: 320px;
   
   display: grid;
   gap: 5px;
@@ -172,14 +179,13 @@ form {
       display: grid;
       gap: 5px;
       grid-template-rows: 100px 1fr;
-      grid-template-columns: 400px 1fr;
+      grid-template-columns: 350px 1fr;
       grid-template-areas:
       "titulo     titulo"
       "formulario cartao";
     }
     
     .cartoes{
-      display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       align-content: flex-start;
@@ -195,7 +201,6 @@ form {
     
     .titulo {
       grid-area: titulo;
-      text-align: center;
       font-size: 50px;
       color: rgb(255, 255, 255);
     }
